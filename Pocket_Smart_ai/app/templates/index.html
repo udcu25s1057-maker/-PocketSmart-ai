@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4ef">
+  <title>PocketSmart AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body data-page="{{ page }}">
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="PocketSmart home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Pocket<span class="brand-light">Smart</span></span>
+      </a>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="primary-nav">
+        <a href="/dashboard" data-nav="dashboard"><span class="nav-icon">◫</span>Overview</a>
+        <a href="/home-planner" data-nav="home-planner"><span class="nav-icon">⌂</span>Home setup</a>
+        <a href="/party-planner" data-nav="party-planner"><span class="nav-icon">✳</span>Event planner</a>
+        <a href="/jewelry-planner" data-nav="jewelry-planner"><span class="nav-icon">◇</span>Jewelry edit</a>
+        <a href="/history" data-nav="history"><span class="nav-icon">◷</span>Plan history</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="status-dot"></span><span>Planning, made practical</span></div>
+        <div id="account-area" class="account-area"></div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>POCKETSMART</span><span class="crumb-slash">/</span><span id="page-label">WORKSPACE</span></div>
+        <div id="topbar-action" class="topbar-action"></div>
+      </header>
+      <section id="view" class="content" aria-live="polite"></section>
+      <footer class="page-footer"><span>POCKETSMART AI</span><span>Prices are planning estimates, not live listings.</span></footer>
+    </main>
+  </div>
+  <script src="/static/js/app.js" defer></script>
+</body>
+</html>
